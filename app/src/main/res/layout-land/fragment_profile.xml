@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+            <variable
+                name="ViewModel"
+                type="com.first.springer.proccessactivites.ProccessViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F3F3"
+        tools:context=".proccessactivites.Profile">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/profilehorizontal2"
+            app:layout_constraintEnd_toStartOf="@+id/profilevertical2"
+            app:layout_constraintStart_toStartOf="@+id/profilevertical1"
+            app:layout_constraintTop_toTopOf="@+id/profilehorizontal1"
+            app:layout_constraintVertical_bias="0.0"
+            app:cardCornerRadius="20dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="#00918E"
+            android:background="#FFFFFF">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="#FFFFFF">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.05" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.10" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.20" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.80" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.30" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.40" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.50" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.60" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardvertical9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.90" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/editicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:src="@drawable/circleback"
+                    app:layout_constraintBottom_toTopOf="@+id/selectimage"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardhorizgjhhjgontal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.17" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/selectimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:src="@drawable/noimage"
+                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizgjhhjgontal2"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical8"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical6"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/profilecardhorizontal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="20dp"
+                    app:layout_constraintGuide_percent="0.98" />
+
+                <TextView
+                    android:id="@+id/personalinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Personal Information"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical4"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical3"
+                    app:layout_constraintTop_toBottomOf="@+id/selectimage" />
+
+                <TextView
+                    android:id="@+id/namehint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="Name"
+                    android:textAlignment="center"
+                    android:textColor="#707070"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintTop_toBottomOf="@+id/personalinfo" />
+
+                <ImageView
+                    android:id="@+id/namehintimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/person"
+                    app:layout_constraintBottom_toBottomOf="@+id/namehint"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toTopOf="@+id/namehint" />
+
+                <ImageView
+                    android:id="@+id/emailhintimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/mail"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+                <ImageView
+                    android:id="@+id/agehintimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_age"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintHorizontal_bias="0.333"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                <ImageView
+                    android:id="@+id/genderhintimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/ic_gender"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintHorizontal_bias="0.636"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toBottomOf="@+id/agetext" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="left"
+                    android:text="@={ViewModel.EditName}"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical7"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toBottomOf="@+id/namehint" />
+
+                <TextView
+                    android:id="@+id/emailhint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="E-mail"
+                    android:textAlignment="center"
+                    android:textColor="#707070"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+                <TextView
+                    android:id="@+id/genderhint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Gender"
+                    android:textAlignment="center"
+                    android:textColor="#707070"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintTop_toBottomOf="@+id/agetext" />
+
+                <TextView
+                    android:id="@+id/maletext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Male"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical3"
+                    app:layout_constraintTop_toBottomOf="@+id/genderhint" />
+
+                <TextView
+                    android:id="@+id/femaletext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Female"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical8"
+                    app:layout_constraintTop_toBottomOf="@+id/genderhint" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@={ViewModel.EditEmail}"
+                    android:gravity="left"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical4"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toBottomOf="@+id/emailhint" />
+
+                <TextView
+                    android:id="@+id/agetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@={ViewModel.EditAge}"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toBottomOf="@+id/agehintimage" />
+
+                <ImageView
+                    android:id="@+id/maleselect"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/bordercircle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical3"
+                    app:layout_constraintHorizontal_bias="0.355"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintTop_toBottomOf="@+id/genderhintimage" />
+
+                <ImageView
+                    android:id="@+id/femaleselect"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:src="@drawable/bordercircle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/femaletext"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical7"
+                    app:layout_constraintTop_toBottomOf="@+id/genderhint" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/editicon"
+                    app:layout_constraintEnd_toEndOf="@+id/editicon"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                    app:layout_constraintTop_toTopOf="@+id/editicon"
+                    app:srcCompat="@drawable/edit" />
+
+                <TextView
+                    android:id="@+id/agehint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Age"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
+                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                    app:layout_constraintTop_toBottomOf="@+id/email" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/profilehorizontal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.20" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/profilehorizontal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/profilevertical1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.05" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/profilevertical2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp"
+            app:layout_constraintGuide_percent="0.95" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
