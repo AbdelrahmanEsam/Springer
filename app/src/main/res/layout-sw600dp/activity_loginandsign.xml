@@ -176,7 +176,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guidelinelns2"
             app:layout_constraintStart_toStartOf="@+id/guidelinelns2"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
-            android:onClick="facesignin"
+            android:onClick="faceSignIn"
             app:srcCompat="@drawable/ic_face4" />
 
         <ImageView
@@ -187,7 +187,7 @@
             app:layout_constraintEnd_toStartOf="@+id/guidelinelns4"
             app:layout_constraintStart_toStartOf="@+id/guidelinelns4"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
-            android:onClick="googlesignin"
+            android:onClick="googleSignIn"
             app:srcCompat="@drawable/ic_google" />
 
         <TextView

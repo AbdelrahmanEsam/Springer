@@ -125,7 +125,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/guidelineghjh3"
                     app:layout_constraintStart_toStartOf="@+id/guidelineghjh3"
                     app:layout_constraintTop_toTopOf="@+id/guidelinelndlandhorizontal4"
-                    android:onClick="facesignin"
+                    android:onClick="faceSignIn"
                     app:srcCompat="@drawable/ic_face4" />
 
                 <ImageView
@@ -136,7 +136,7 @@
                     app:layout_constraintEnd_toStartOf="@+id/guidelinefghf3"
                     app:layout_constraintStart_toStartOf="@+id/guidelinefghf3"
                     app:layout_constraintTop_toTopOf="@+id/guidelinelndlandhorizontal4"
-                    android:onClick="googlesignin"
+                    android:onClick="googleSignIn"
                     app:srcCompat="@drawable/ic_google" />
 
                 <TextView

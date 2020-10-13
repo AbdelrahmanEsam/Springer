@@ -8,17 +8,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:553467891497:android:ff12ccc64535c55b73f138",
+        "mobilesdk_app_id": "1:553467891497:android:6fe2e5c5d4bf657a73f138",
         "android_client_info": {
-          "package_name": "com.first.springer"
+          "package_name": "com.apptikar.springer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "553467891497-vfotomu0fu5drisf9pvm63q2efbcbloq.apps.googleusercontent.com",
+          "client_id": "553467891497-mndbf7vuj5kqg5bkg1lnvu3qhladfe0e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.first.springer",
+            "package_name": "com.apptikar.springer",
             "certificate_hash": "8b3ffb65ec480ae08c83f7ba6457e800275bc931"
           }
         },

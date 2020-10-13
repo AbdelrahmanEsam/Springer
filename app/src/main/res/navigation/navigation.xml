@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mold">
+
+    <action
+        android:id="@+id/action_global_to_profile"
+          app:launchSingleTop="true"
+        app:destination="@id/profile" />
+
+    <action
+        android:id="@+id/action_global_to_allresults"
+        app:launchSingleTop="true"
+        app:destination="@id/allresults" />
+
+    <action
+        android:id="@+id/action_global_to_help"
+        app:launchSingleTop="true"
+        app:destination="@id/help" />
+
+
+    <fragment
+        android:id="@+id/mold"
+        android:name="com.apptikar.springer.proccessactivites.Mold"
+        android:label="Mold"
+        tools:layout="@layout/fragment_mold">
+        <action
+            android:id="@+id/action_mold_to_measure"
+
+            app:destination="@id/measure" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/measure"
+        android:name="com.apptikar.springer.proccessactivites.Measure"
+        android:label="Measure"
+        tools:layout="@layout/fragment_measure">
+        <action
+            android:id="@+id/action_measure_to_results"
+            app:destination="@id/results" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/results"
+        android:name="com.apptikar.springer.proccessactivites.Results"
+        android:label="Results"
+        tools:layout="@layout/fragment_results">
+        <action
+            android:id="@+id/action_results_to_mold"
+            app:destination="@id/mold" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.apptikar.springer.proccessactivites.Profile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_editprofile"
+            app:destination="@id/editprofile"
+            app:enterAnim="@anim/transitionin"
+            app:exitAnim="@anim/transitionout"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/editprofile"
+        android:name="com.apptikar.springer.proccessactivites.Editprofile"
+        android:label="Editprofile"
+        tools:layout="@layout/fragment_editprofile">
+    </fragment>
+    <fragment
+        android:id="@+id/allresults"
+        android:name="com.apptikar.springer.proccessactivites.Allresults"
+        android:label="fragment_allresults"
+        tools:layout="@layout/fragment_allresults" >
+        <action
+            android:id="@+id/action_allresults_to_resultshow"
+            app:destination="@id/resultshow" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/resultshow"
+        android:name="com.apptikar.springer.proccessactivites.ResultShow"
+        android:label="Resultshow"
+        tools:layout="@layout/fragment_resultshow">
+
+    </fragment>
+    <fragment
+        android:id="@+id/help"
+        android:name="com.apptikar.springer.proccessactivites.Help"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+
+    </fragment>
+</navigation>

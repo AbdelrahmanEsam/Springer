@@ -54,6 +54,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Results Available"
+                android:fontFamily="@font/varela_round"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textColor="#707070"

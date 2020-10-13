@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ViewModel"
-            type="com.first.springer.proccessactivites.ProccessViewModel" />
+            type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -29,592 +29,483 @@
             app:strokeWidth="2dp"
             app:strokeColor="#00918E"
             android:background="#FFFFFF">
-
-
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="2dp"
-                android:background="#FFFFFF">
+                android:fillViewport="true">
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical1"
-                    android:layout_width="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.05" />
+                    android:layout_margin="2dp"
+                    android:background="#FFFFFF">
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.10" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.20" />
-
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.80" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.30" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.40" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.50" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.60" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardvertical9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.90" />
-
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/selectimage"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:clickable="true"
-                    android:src="@drawable/noimage"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal2545"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical8"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical6"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal1">
-
-
-                </de.hdodenhof.circleimageview.CircleImageView>
-
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.01" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="43dp"
-                    app:layout_constraintGuide_percent="0.07" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal2545"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="43dp"
-                    app:layout_constraintGuide_percent="0.13" />
-
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.98" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.20" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.23" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.33" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.38" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="370dp"
-                    app:layout_constraintGuide_percent="0.48" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.53" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.63" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.68" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_end="260dp"
-                    app:layout_constraintGuide_percent="0.73" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_end="260dp"
-                    app:layout_constraintGuide_percent="0.78" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/profilecardhorizontal14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_end="260dp"
-                    app:layout_constraintGuide_percent="0.90" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/save"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/buttons3"
-                    android:fontFamily="@font/cairo_extralight"
-                    android:text="Save"
-                    android:gravity="center"
-                    android:textAllCaps="false"
-                    android:textColor="#FFFFFF"
-                    android:textSize="17sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal3"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical4"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical3"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal14" />
-
-                <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Personal Information"
-                    android:textAlignment="center"
-                    android:gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal4"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal2545" />
-
-                <TextView
-                    android:id="@+id/namehint"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Name"
-                    android:textAlignment="center"
-                    android:textColor="#707070"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal5"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal4" />
-
-                <ImageView
-                    android:id="@+id/namehintimage"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:src="@drawable/person"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal5"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal4" />
-
-                <ImageView
-                    android:id="@+id/emailhintimage"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:src="@drawable/mail"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal7"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal6" />
-
-
-                gender
-
-                <ImageView
-                    android:id="@+id/genderedithintimage"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:src="@drawable/ic_gender"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal11"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal10" />
-
-                <ImageView
-                    android:id="@+id/passedithintimage"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:src="@drawable/pass"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal13"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal12" />
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/yournameedit"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:boxCornerRadiusBottomStart="20dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusTopStart="20dp"
-                    app:boxStrokeColor="#00918E"
-                    app:hintEnabled="false"
-                    app:hintTextColor="#00918E"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal6"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal5">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxLines="1"
-                        android:gravity="left"
-                        android:inputType="textPersonName"
-                        android:textColor="#000000"
-                        android:textColorHint="#000000"
-                        android:padding="15dp"
-                        android:text="@={ViewModel.EditName}"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_age"
+                        app:layout_constraintBottom_toBottomOf="@+id/agehint"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toTopOf="@+id/agehint" />
 
-                <TextView
-                    android:id="@+id/emailhint"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="E-mail"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="#707070"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal7"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal6" />
-
-                <TextView
-                    android:id="@+id/genderhint"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Gender"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="#707070"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal11"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal10" />
-
-                <TextView
-                    android:id="@+id/maletext"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Male"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal12"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical3"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal11" />
-
-
-                <TextView
-                    android:id="@+id/femaletext"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Female"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="#000000"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal12"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical8"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal11" />
-
-                <TextView
-                    android:id="@+id/agehint"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Age"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="#707070"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal9"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal8" />
-
-                <TextView
-                    android:id="@+id/passhint"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="Password"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="#707070"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal13"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal12" />
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_age"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal9"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal8" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/youremailedit"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:boxCornerRadiusBottomStart="20dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusTopStart="20dp"
-                    app:boxStrokeColor="#00918E"
-                    app:hintEnabled="false"
-                    app:hintTextColor="#00918E"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal8"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal7">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxLines="1"
-                        android:inputType="textEmailAddress"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.05" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.10" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.20" />
+
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.80" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.30" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.40" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.50" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.60" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/profilecardvertical9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="20dp"
+                        app:layout_constraintGuide_percent="0.90" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/selectimage"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:src="@drawable/noimage"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical8"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical6"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:clickable="true"
+                        android:elevation="5dp"
+                        android:src="#ffffff"
+                        app:layout_constraintBottom_toBottomOf="@+id/selectimage"
+                        app:layout_constraintEnd_toEndOf="@+id/selectimage"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical7"
+                        app:layout_constraintTop_toTopOf="@+id/selectimage"
+                        app:layout_constraintVertical_bias="1.0" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="6dp"
+                        android:src="@drawable/ic_camera_alt_black_24dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+                        app:layout_constraintStart_toStartOf="@+id/imageView12"
+                        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/buttons3"
+                        android:fontFamily="@font/varela_round"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical4"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical3"
+                        app:layout_constraintTop_toBottomOf="@+id/yourpassdit" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Personal Information"
+                        android:fontFamily="@font/varela_round"
+                        android:textAlignment="center"
                         android:textColor="#000000"
-                        android:gravity="left"
-                        android:text="@={ViewModel.EditEmail}"
-                        android:textColorHint="#000000"
+                        android:textSize="20sp"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/selectimage" />
+
+                    <TextView
+                        android:id="@+id/namehint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:fontFamily="@font/varela_round"
+                        android:textAlignment="center"
+                        android:textColor="#707070"
                         android:textSize="15sp"
-                        android:padding="15dp"
-                        android:textStyle="normal" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/youragedit"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:boxCornerRadiusBottomStart="20dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusTopStart="20dp"
-                    app:boxStrokeColor="#00918E"
-                    app:hintTextColor="#00918E"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal10"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal9">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:id="@+id/namehintimage"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
-                        android:maxLines="1"
-                        android:textColor="#000000"
-                        android:gravity="left"
-                        android:text="@={ViewModel.EditAge}"
-                        android:textColorHint="#000000"
-                        android:textSize="15sp"
-                        android:textStyle="normal"
-                        android:padding="15dp"
-                        />
+                        android:src="@drawable/person"
+                        app:layout_constraintBottom_toBottomOf="@+id/namehint"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toTopOf="@+id/namehint" />
 
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/yourpassdit"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:boxCornerRadiusBottomEnd="20dp"
-                    app:boxCornerRadiusBottomStart="20dp"
-                    app:boxCornerRadiusTopEnd="20dp"
-                    app:boxCornerRadiusTopStart="20dp"
-                    app:boxStrokeColor="#00918E"
-                    app:hintTextColor="#00918E"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal14"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal13"
-                    app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="#A0A0A0">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:id="@+id/emailhintimage"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:inputType="textPassword"
-                        android:maxLines="1"
-                        android:text="@={ViewModel.EditPassword}"
-                        android:textColor="#000000"
-                        android:textColorHint="#000000"
+                        android:src="@drawable/mail"
+                        app:layout_constraintBottom_toBottomOf="@+id/emailhint"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toTopOf="@+id/emailhint" />
+
+
+                    <ImageView
+                        android:id="@+id/genderedithintimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_gender"
+                        app:layout_constraintBottom_toBottomOf="@+id/genderhint"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toTopOf="@+id/genderhint" />
+
+                    <ImageView
+                        android:id="@+id/passedithintimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/pass"
+                        app:layout_constraintBottom_toBottomOf="@+id/passhint"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toTopOf="@+id/passhint" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/yournameedit"
+                        style="@style/TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxCornerRadiusBottomEnd="20dp"
+                        app:boxCornerRadiusBottomStart="20dp"
+                        app:boxCornerRadiusTopEnd="20dp"
+                        app:boxCornerRadiusTopStart="20dp"
+                        app:boxStrokeColor="#00918E"
+                        app:hintTextColor="#00918E"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toBottomOf="@+id/namehint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="left"
+                            android:fontFamily="@font/varela_round"
+                            android:maxLines="1"
+                            android:text="@={ViewModel.editName}"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/emailhint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="E-mail"
+                        android:fontFamily="@font/varela_round"
+                        android:textAlignment="center"
+                        android:textColor="#707070"
                         android:textSize="15sp"
-                        android:gravity="left"
-                        android:padding="15dp"
-                        android:textStyle="normal" />
-                </com.google.android.material.textfield.TextInputLayout>
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/yournameedit" />
 
-                <ImageView
-                    android:id="@+id/maleselect"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:src="@drawable/bordercircle"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal12"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical3"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal11" />
+                    <TextView
+                        android:id="@+id/genderhint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Gender"
+                        android:fontFamily="@font/varela_round"
+                        android:textAlignment="center"
+                        android:textColor="#707070"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/youragedit" />
 
-                <ImageView
-                    android:id="@+id/femaleselect"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:src="@drawable/bordercircle"
-                    app:layout_constraintBottom_toTopOf="@+id/profilecardhorizontal12"
-                    app:layout_constraintEnd_toStartOf="@+id/femaletext"
-                    app:layout_constraintStart_toStartOf="@+id/profilecardvertical7"
-                    app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal11" />
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/imageView12"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:clickable="true"
-                    android:elevation="5dp"
-                    android:src="#ffffff"
-                    app:layout_constraintBottom_toBottomOf="@+id/selectimage"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical8"
-                    app:layout_constraintTop_toBottomOf="@+id/selectimage" />
-
-                <ImageView
-                    android:id="@+id/imageView15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:elevation="6dp"
-                    android:src="@drawable/ic_camera_alt_black_24dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView12"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView12"
-                    app:layout_constraintStart_toStartOf="@+id/imageView12"
-                    app:layout_constraintTop_toTopOf="@+id/imageView12" />
+                    <TextView
+                        android:id="@+id/maletext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Male"
+                        android:fontFamily="@font/varela_round"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical3"
+                        app:layout_constraintTop_toBottomOf="@+id/genderhint" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/femaletext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Female"
+                        android:fontFamily="@font/varela_round"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical8"
+                        app:layout_constraintTop_toBottomOf="@+id/genderhint" />
 
+                    <TextView
+                        android:id="@+id/agehint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Age"
+                        android:fontFamily="@font/varela_round"
+                        android:textAlignment="center"
+                        android:textColor="#707070"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical5"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/youremailedit" />
+
+                    <TextView
+                        android:id="@+id/passhint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:text="Password"
+                        android:fontFamily="@font/varela_round"
+                        android:textAlignment="center"
+                        android:textColor="#707070"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical6"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/maletext" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/youremailedit"
+                        style="@style/TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxCornerRadiusBottomEnd="20dp"
+                        app:boxCornerRadiusBottomStart="20dp"
+                        app:boxCornerRadiusTopEnd="20dp"
+                        app:boxCornerRadiusTopStart="20dp"
+                        app:boxStrokeColor="#00918E"
+                        app:hintTextColor="#00918E"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toBottomOf="@+id/emailhint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="left"
+                            android:maxLines="1"
+                            android:fontFamily="@font/varela_round"
+                            android:text="@={ViewModel.editEmail}"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="normal"
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/youragedit"
+                        style="@style/TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxCornerRadiusBottomEnd="20dp"
+                        app:boxCornerRadiusBottomStart="20dp"
+                        app:boxCornerRadiusTopEnd="20dp"
+                        app:boxCornerRadiusTopStart="20dp"
+                        app:boxStrokeColor="#00918E"
+                        app:hintTextColor="#00918E"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toBottomOf="@+id/agehint">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="left"
+                            android:inputType="number"
+                            android:fontFamily="@font/varela_round"
+                            android:maxLines="1"
+                            android:text="@={ViewModel.editAge}"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="normal"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/yourpassdit"
+                        style="@style/TextInputLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:boxCornerRadiusBottomEnd="20dp"
+                        app:boxCornerRadiusBottomStart="20dp"
+                        app:boxCornerRadiusTopEnd="20dp"
+                        app:boxCornerRadiusTopStart="20dp"
+                        app:boxStrokeColor="#00918E"
+                        app:hintTextColor="#00918E"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
+                        app:layout_constraintTop_toBottomOf="@+id/passhint"
+                        app:passwordToggleEnabled="true"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="textPassword"
+                            android:maxLines="1"
+                            android:fontFamily="@font/varela_round"
+                            android:text="@={ViewModel.editPassword}"
+                            android:textColor="#000000"
+                            android:textColorHint="#000000"
+                            android:textSize="15sp"
+                            android:textStyle="normal"
+
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageView
+                        android:id="@+id/maleselect"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="30dp"
+                        android:clickable="true"
+                        android:src="@drawable/bordercircle"
+                        app:layout_constraintEnd_toStartOf="@+id/profilecardvertical3"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/genderhint" />
+
+                    <ImageView
+                        android:id="@+id/femaleselect"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/bordercircle"
+                        android:clickable="true"
+                        app:layout_constraintEnd_toStartOf="@+id/femaletext"
+                        app:layout_constraintStart_toStartOf="@+id/profilecardvertical7"
+                        app:layout_constraintTop_toBottomOf="@+id/genderhint" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
 
         </com.google.android.material.card.MaterialCardView>
 
@@ -624,7 +515,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="20dp"
-            app:layout_constraintGuide_percent="0.10" />
+            app:layout_constraintGuide_percent="0.05" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/profilehorizontal2"

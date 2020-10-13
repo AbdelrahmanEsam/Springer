@@ -8,7 +8,7 @@
     <data>
         <variable
             name="ViewModel"
-            type="com.first.springer.proccessactivites.ProccessViewModel" />
+            type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -152,7 +152,8 @@
                         app:layout_constraintBottom_toBottomOf="@+id/selectimage"
                         app:layout_constraintEnd_toEndOf="@+id/selectimage"
                         app:layout_constraintStart_toStartOf="@+id/profilecardvertical7"
-                        app:layout_constraintTop_toBottomOf="@+id/selectimage" />
+                        app:layout_constraintTop_toTopOf="@+id/selectimage"
+                        app:layout_constraintVertical_bias="1.0" />
 
 
                     <ImageView
@@ -303,7 +304,7 @@
                             android:maxLines="1"
                             android:textColor="#000000"
                             android:gravity="left"
-                            android:text="@={ViewModel.EditName}"
+                            android:text="@={ViewModel.editName}"
                             android:textColorHint="#000000"
                             android:textSize="15sp"
                             android:textStyle="normal"
@@ -423,7 +424,7 @@
                             android:layout_height="wrap_content"
                             android:maxLines="1"
                             android:gravity="left"
-                            android:text="@={ViewModel.EditEmail}"
+                            android:text="@={ViewModel.editEmail}"
                             android:textColor="#000000"
                             android:textColorHint="#000000"
                             android:textSize="15sp"
@@ -453,7 +454,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:maxLines="1"
-                            android:text="@={ViewModel.EditAge}"
+                            android:inputType="number"
+                            android:text="@={ViewModel.editAge}"
                             android:gravity="left"
                             android:textColor="#000000"
                             android:textColorHint="#000000"
@@ -487,7 +489,7 @@
                             android:maxLines="1"
                             android:textColor="#000000"
                             android:textColorHint="#000000"
-                            android:text="@={ViewModel.EditPassword}"
+                            android:text="@={ViewModel.editPassword}"
                             android:textSize="15sp"
                             android:textStyle="normal"
                             android:inputType="textPassword" />
@@ -526,7 +528,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.20" />
+            app:layout_constraintGuide_percent="0.05" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/profilehorizontal2"

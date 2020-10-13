@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ViewModel"
-            type="com.first.springer.login.SignupViewModel" />
+            type="com.apptikar.springer.login.SignupViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -90,7 +90,7 @@
             android:layout_height="40dp"
             android:background="@drawable/buttons2"
             android:drawableRight="@drawable/ic_greenrightarrow"
-            android:onClick="SignUp"
+            android:onClick="signUp"
             android:paddingStart="25dp"
             android:paddingEnd="25dp"
             android:text="Sign Up"
@@ -242,7 +242,7 @@
             android:id="@+id/imageView2"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:onClick="facesignin"
+            android:onClick="faceSignIn"
             app:layout_constraintBottom_toTopOf="@+id/guideline13213"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
             app:layout_constraintStart_toStartOf="@+id/guideline7"
@@ -253,7 +253,7 @@
             android:id="@+id/imageView3"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:onClick="googlesignin"
+            android:onClick="googleSignIn"
             app:layout_constraintBottom_toTopOf="@+id/guideline13213"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintStart_toStartOf="@+id/guideline6"

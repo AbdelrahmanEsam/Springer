@@ -12,7 +12,7 @@
     <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".proccessactivites.Fragmentholder"
+        tools:context=".proccessactivites.FragmentHolder"
         android:id="@+id/drawer"
         android:background="#F3F3F3">
 
@@ -25,6 +25,18 @@
             >
 
 
+            <fragment
+                android:id="@+id/navhostfragmentcontainer"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/navigation"/>
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/personalimagetoolbar"

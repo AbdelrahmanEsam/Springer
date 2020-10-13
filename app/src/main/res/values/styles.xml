@@ -20,6 +20,9 @@
         <item name="android:background">@android:color/transparent</item>
     </style>
 
+    <style name="DialogStyle" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowFullscreen">false</item>
+    </style>
 
 
     <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="ViewModel"
-            type="com.first.springer.proccessactivites.ProccessViewModel" />
+            type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
     </data>
 
 
@@ -20,18 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".proccessactivites.Measure">
-
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/personalimagetoolbar"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:elevation="5dp"
-            android:src="@drawable/noimage"
-            app:layout_constraintBottom_toBottomOf="@+id/measuretoolbar"
-            app:layout_constraintEnd_toStartOf="@+id/measurevertical2"
-            app:layout_constraintStart_toStartOf="@+id/moldvertical4"
-            app:layout_constraintTop_toTopOf="@+id/measuretoolbar" />
 
 
         <androidx.constraintlayout.widget.Guideline
@@ -51,33 +39,6 @@
             app:layout_constraintGuide_percent="0.80" />
 
 
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/measuretoolbar"
-
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="#2D2C2E"
-            android:elevation="4dp"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Measure"
-                android:textSize="25sp"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:id="@+id/toolbar_title" />
-
-        </androidx.appcompat.widget.Toolbar>
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/springlength"
             style="@style/TextInputLayout"
@@ -93,7 +54,7 @@
             app:layout_constraintBottom_toTopOf="@+id/springspaces"
             app:layout_constraintEnd_toStartOf="@+id/measurevertical2"
             app:layout_constraintStart_toStartOf="@+id/measurevertical1"
-            app:layout_constraintTop_toTopOf="@+id/measurehorizontal1">
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -102,7 +63,7 @@
                 android:hint="Spring Length(mm)"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
-                android:text="@={ViewModel.SpringLength}"
+                android:text="@={ViewModel.springLength}"
                 android:textColor="#000000"
                 android:textColorHint="#000000"
                 android:textSize="18sp"
@@ -134,7 +95,7 @@
                 android:hint="Spring Spaces(mm)"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:text="@={ViewModel.SpringSpace}"
+                android:text="@={ViewModel.springSpace}"
                 android:textColorHint="#000000"
                 android:textSize="18sp"
                 android:textStyle="normal"
@@ -165,7 +126,7 @@
                 android:hint="Number Of Spaces"
                 android:inputType="number"
                 android:singleLine="true"
-                android:text="@={ViewModel.SpringNoOfSpace}"
+                android:text="@={ViewModel.springNoOfSpace}"
                 android:textColor="#000000"
                 android:textColorHint="#000000"
                 android:textSize="18sp"
@@ -197,7 +158,7 @@
                 android:hint="Spring Housing"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:text="@={ViewModel.SpringHousing}"
+                android:text="@={ViewModel.springHousing}"
                 android:textColor="#000000"
                 android:textColorHint="#000000"
                 android:textSize="18sp"
@@ -229,7 +190,7 @@
                 android:hint="Ejection Stroke"
                 android:inputType="numberDecimal"
                 android:singleLine="true"
-                android:text="@={ViewModel.EjectionStroke}"
+                android:text="@={ViewModel.ejectionStroke}"
                 android:textColor="#000000"
                 android:textColorHint="#000000"
                 android:textSize="18sp"
@@ -255,14 +216,6 @@
             app:layout_constraintGuide_begin="20dp"
             app:layout_constraintGuide_percent="0.10" />
 
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/measurehorizontal1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_begin="20dp"
-            app:layout_constraintGuide_percent="0.10" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/moldvertical3"

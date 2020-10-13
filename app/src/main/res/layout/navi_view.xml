@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="ViewModel"
+            type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
     </data>
 
     <ScrollView
@@ -71,6 +73,7 @@
                     android:gravity="left"
                     android:textColor="#ffffff"
                     android:textSize="12sp"
+                    android:text="@={ViewModel.editName}"
                     app:layout_constraintBottom_toTopOf="@+id/emailview"
                     app:layout_constraintEnd_toStartOf="@+id/guideline264"
                     app:layout_constraintStart_toStartOf="@+id/personalImageView"

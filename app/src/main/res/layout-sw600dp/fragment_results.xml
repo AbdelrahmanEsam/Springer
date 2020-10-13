@@ -6,15 +6,10 @@
     <data>
         <variable
             name="ViewModel"
-            type="com.first.springer.proccessactivites.ProccessViewModel" />
+            type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
     </data>
 
-    <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/result"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#F3F3F3"
-        tools:context=".proccessactivites.ResultsActivity">
+
 
 
         <ScrollView
@@ -31,71 +26,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/personalimagetoolbar"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginTop="5dp"
-                    android:elevation="5dp"
-                    android:src="@drawable/noimage"
-                    app:layout_constraintBottom_toBottomOf="@+id/resulttoolbar"
-                    app:layout_constraintEnd_toStartOf="@+id/resultvertical2"
-                    app:layout_constraintTop_toTopOf="@+id/resulttoolbar" />
-
-                <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/resulttoolbar"
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#2D2C2E"
-                    android:elevation="4dp"
-                    android:minHeight="?attr/actionBarSize"
-                    android:theme="?attr/actionBarTheme"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-                    <TextView
-                        android:id="@+id/toolbar_title"
-                        android:layout_width="wrap_content"
-                        android:layout_height="55dp"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:text="Measure"
-                        android:textColor="#ffffff"
-                        android:textSize="25sp" />
-
-                </androidx.appcompat.widget.Toolbar>
-
 
                 <TextView
                     android:id="@+id/codeoneresult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Code : 11234"
                     android:gravity="center"
+                    android:text="Code : 11234"
                     android:textColor="#2D2C2E"
                     android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/cardView"
                     app:layout_constraintEnd_toStartOf="@+id/resultvertical2"
-                    app:layout_constraintTop_toBottomOf="@+id/resulttoolbar" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Mold Model"
                     android:gravity="center"
+                    android:text="Mold Model"
                     android:textColor="#2D2C2E"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/resulthorizontal1"
                     app:layout_constraintStart_toStartOf="@+id/resultvertical1"
-                    app:layout_constraintTop_toBottomOf="@+id/resulttoolbar" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
                 <androidx.constraintlayout.widget.Guideline
@@ -145,7 +101,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
-                        android:background="#F3F3F3"
+                        android:background="#FFFFFF"
                         app:layout_constraintCircleRadius="10dp">
 
                         <com.github.lzyzsd.circleprogress.DonutProgress
@@ -175,6 +131,7 @@
                             android:text="Max Compression Distance"
                             android:textColor="#00918E"
                             android:textSize="18sp"
+                            app:layout_constraintBottom_toTopOf="@+id/maxcomdesresultoneresult"
                             app:layout_constraintStart_toStartOf="@+id/maxcomdesvertical1"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -184,9 +141,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="10dp"
                             android:gravity="left"
-                            android:text="@={ViewModel.maxprogressfinal}"
                             android:textColor="#2D2C2E"
                             android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/maxprogress"
                             app:layout_constraintStart_toStartOf="@+id/maxcomdesvertical1"
                             app:layout_constraintTop_toBottomOf="@+id/comdess" />
@@ -223,7 +180,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
-                        android:background="#F3F3F3"
+                        android:background="#FFFFFF"
                         app:layout_constraintCircleRadius="10dp">
 
                         <com.github.lzyzsd.circleprogress.DonutProgress
@@ -251,6 +208,7 @@
                             android:text="Compression Distance"
                             android:textColor="#00918E"
                             android:textSize="18sp"
+                            app:layout_constraintBottom_toTopOf="@+id/comdesresultoneresult"
                             app:layout_constraintStart_toStartOf="@+id/comdesvertical1"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -260,9 +218,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="10dp"
                             android:gravity="left"
-                            android:text="@={ViewModel.CompressionDistancefinal}"
                             android:textColor="#2D2C2E"
                             android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/progress"
                             app:layout_constraintStart_toStartOf="@+id/comdesvertical1"
                             app:layout_constraintTop_toBottomOf="@+id/comdes" />
@@ -298,7 +256,7 @@
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
-                        android:background="#F3F3F3"
+                        android:background="#FFFFFF"
                         app:layout_constraintCircleRadius="10dp">
 
                         <com.github.lzyzsd.circleprogress.DonutProgress
@@ -327,6 +285,7 @@
                             android:text="Compression Percent"
                             android:textColor="#00918E"
                             android:textSize="18sp"
+                            app:layout_constraintBottom_toTopOf="@+id/compercentresultoneresult"
                             app:layout_constraintStart_toStartOf="@+id/compercentvertical1"
                             app:layout_constraintTop_toTopOf="parent" />
 
@@ -336,9 +295,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="10dp"
                             android:gravity="left"
-                            android:text="@={ViewModel.percentprogressfinal}"
                             android:textColor="#2D2C2E"
                             android:textSize="18sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/percentprogress"
                             app:layout_constraintStart_toStartOf="@+id/compercentvertical1"
                             app:layout_constraintTop_toBottomOf="@+id/compercent" />
@@ -390,7 +349,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_end="618dp"
-                    app:layout_constraintGuide_percent="0.12" />
+                    app:layout_constraintGuide_percent="0.10" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/resulthorizontal2"
@@ -398,7 +357,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.45" />
+                    app:layout_constraintGuide_percent="0.35" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/resulthorizontal3"
@@ -467,7 +426,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.12" />
+                    app:layout_constraintGuide_percent="0.10" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/resulthorizontal50"
@@ -510,21 +469,4 @@
                     app:layout_constraintGuide_percent="0.95" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
-
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigationview3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:elevation="10dp"
-            android:focusableInTouchMode="true">
-
-            <include
-                layout="@layout/navi_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-
-        </com.google.android.material.navigation.NavigationView>
-    </androidx.drawerlayout.widget.DrawerLayout>
 </layout>

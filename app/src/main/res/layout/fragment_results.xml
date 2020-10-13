@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
         <variable
             name="ViewModel"
-            type="com.first.springer.proccessactivites.ProccessViewModel" />
+            type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
     </data>
 
 
@@ -17,41 +16,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/personalimagetoolbar"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="5dp"
-            android:elevation="5dp"
-            android:src="@drawable/noimage"
-            app:layout_constraintBottom_toBottomOf="@+id/resulttoolbar"
-            app:layout_constraintEnd_toStartOf="@+id/resultvertical2"
-            app:layout_constraintTop_toTopOf="@+id/resulttoolbar" />
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/resulttoolbar"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:background="#2D2C2E"
-                android:elevation="4dp"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-                <TextView
-                    android:id="@+id/toolbar_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Result"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-            </androidx.appcompat.widget.Toolbar>
 
         <TextView
             android:id="@+id/codeoneresult"
@@ -64,7 +28,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/cardView"
             app:layout_constraintEnd_toStartOf="@+id/resultvertical2"
-            app:layout_constraintTop_toBottomOf="@+id/resulttoolbar" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/name"
@@ -76,7 +40,7 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/resulthorizontal1"
             app:layout_constraintStart_toStartOf="@+id/resultvertical1"
-            app:layout_constraintTop_toBottomOf="@+id/resulttoolbar" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
             <androidx.constraintlayout.widget.Guideline
@@ -408,7 +372,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_end="618dp"
-            app:layout_constraintGuide_percent="0.20" />
+            app:layout_constraintGuide_percent="0.10" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/resulthorizontal2"
@@ -416,7 +380,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="20dp"
-            app:layout_constraintGuide_percent="0.45" />
+            app:layout_constraintGuide_percent="0.35" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/resulthorizontal3"
@@ -477,31 +441,7 @@
             app:layout_constraintTop_toTopOf="@+id/resulthorizontal3" />
 
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/resulthorizontalout1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="20dp"
-                app:layout_constraintGuide_percent="0.20" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/resulthorizontal50"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="20dp"
-                app:layout_constraintGuide_percent="0.20" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/resulthorizontal51"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_begin="20dp"
-                app:layout_constraintGuide_percent="0.22" />
-
-            <androidx.constraintlayout.widget.Guideline
+        <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/resultverticalout1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

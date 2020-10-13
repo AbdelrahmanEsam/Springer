@@ -6,7 +6,7 @@
     <data>
     <variable
         name="ViewModel"
-        type="com.first.springer.login.LoginViewModel" />
+        type="com.apptikar.springer.login.LoginViewModel" />
 </data>
 
 
@@ -372,7 +372,7 @@
             android:id="@+id/facesignin"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:onClick="facesignin"
+            android:onClick="faceSignIn"
             app:layout_constraintBottom_toTopOf="@+id/textView8"
             app:layout_constraintEnd_toStartOf="@+id/guideline7"
             app:layout_constraintHorizontal_bias="0.488"
@@ -385,7 +385,7 @@
             android:id="@+id/googlesignin"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:onClick="googlesignin"
+            android:onClick="googleSignIn"
             app:layout_constraintBottom_toTopOf="@+id/textView8"
             app:layout_constraintEnd_toStartOf="@+id/guideline5"
             app:layout_constraintStart_toStartOf="@+id/guideline5"

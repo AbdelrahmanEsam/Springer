@@ -7,7 +7,7 @@
         <data>
                 <variable
                     name="ViewModel"
-                    type="com.first.springer.proccessactivites.ProccessViewModel" />
+                    type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
         </data>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,7 +39,7 @@
                             android:layout_height="wrap_content"
                             android:hint="Mold Name"
                             android:textSize="18dp"
-                            android:text="@={ViewModel.MoldOrDieName}"
+                            android:text="@={ViewModel.moldOrDieName}"
                             android:imeOptions="actionNext"
                             android:singleLine="true"
                             android:textColor="#000000"
@@ -70,7 +70,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Mold Code"
-                            android:text="@={ViewModel.MoldOrDieCode}"
+                            android:text="@={ViewModel.moldOrDieCode}"
                             android:textSize="18dp"
                             android:imeOptions="actionGo"
                             android:inputType="number"
@@ -230,21 +230,12 @@
 
 
                 <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/moldhorizontal1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.10" />
-
-
-                <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/moldhorizontal2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.30" />
+                    app:layout_constraintGuide_percent="0.27" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/moldhorizontal3"
@@ -252,7 +243,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.60" />
+                    app:layout_constraintGuide_percent="0.57" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/moldhorizontal4"
@@ -275,21 +266,21 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_begin="20dp"
-                    app:layout_constraintGuide_percent="0.20" />
+                    app:layout_constraintGuide_percent="0.12" />
 
                 <TextView
                     android:id="@+id/moldtext"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Choose Your Mold :"
                     android:gravity="left"
+                    android:text="Choose Your Mold :"
                     android:textColor="#2D2C2E"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/moldhorizontal6"
                     app:layout_constraintEnd_toStartOf="@+id/moldvertical11"
                     app:layout_constraintStart_toStartOf="@+id/moldvertical1"
-                    app:layout_constraintTop_toTopOf="@+id/moldhorizontal1" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/camera"
@@ -302,16 +293,16 @@
                     app:layout_constraintBottom_toTopOf="@+id/moldhorizontal6"
                     app:layout_constraintEnd_toStartOf="@+id/moldvertical2"
                     app:layout_constraintStart_toStartOf="@+id/moldvertical12"
-                    app:layout_constraintTop_toTopOf="@+id/moldhorizontal1" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/moldbutton"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/buttons4"
                     android:fontFamily="@font/cairo_extralight"
-                    android:text="Mold"
                     android:gravity="center"
+                    android:text="Mold"
                     android:textAllCaps="false"
                     android:textColor="#2D2C2E"
                     android:textSize="17sp"
@@ -323,11 +314,11 @@
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/diebutton"
                     android:layout_width="0dp"
-                    android:layout_height="40dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/buttons2"
                     android:fontFamily="@font/cairo_extralight"
-                    android:text="Die"
                     android:gravity="center"
+                    android:text="Die"
                     android:textAllCaps="false"
                     android:textColor="#01928F"
                     android:textSize="17sp"

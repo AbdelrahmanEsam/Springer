@@ -8,18 +8,17 @@
     android:id="@+id/holder">
 
 
-
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/moldordienameallresults"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Mold Name"
+        android:text="Mold Name : "
         android:textAllCaps="false"
         android:textColor="#2D2C2E"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline19"
-        app:layout_constraintEnd_toStartOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline12"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
@@ -120,7 +119,7 @@
         app:layout_constraintGuide_percent="0.70" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/comprissiondistenceallresults"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Compression Distence"
@@ -134,7 +133,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline7" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/comprissionpercentallresults"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Compression Percent"
@@ -151,7 +150,7 @@
         android:id="@+id/textView17"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Max Compression Distence"
+        android:text="maxcomprissiondistenceallresults"
         android:gravity="left"
         android:textAllCaps="false"
         android:textColor="#2D2C2E"
@@ -174,35 +173,35 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline13"
         app:layout_constraintEnd_toStartOf="@+id/guideline12"
-        app:layout_constraintStart_toStartOf="@+id/guideline11" />
+        app:layout_constraintStart_toStartOf="@+id/guideline11"/>
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/comprissiondistenceallresultsresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="15 CM"
         android:textColor="#2D2C2E"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintBottom_toBottomOf="@+id/comprissiondistenceallresults"
         app:layout_constraintEnd_toStartOf="@+id/guideline120"
-        app:layout_constraintTop_toTopOf="@+id/textView15" />
+        app:layout_constraintTop_toTopOf="@+id/comprissiondistenceallresults" />
 
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/comprissionpercentallresultsresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="35 %"
         android:textColor="#2D2C2E"
         android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        app:layout_constraintBottom_toBottomOf="@+id/comprissionpercentallresults"
         app:layout_constraintEnd_toStartOf="@+id/guideline120"
-        app:layout_constraintTop_toTopOf="@+id/textView16" />
+        app:layout_constraintTop_toTopOf="@+id/comprissionpercentallresults" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/maxcomprissiondistenceallresultsresult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"

@@ -7,7 +7,7 @@
 
             <variable
                 name="ViewModel"
-                type="com.first.springer.proccessactivites.ProccessViewModel" />
+                type="com.apptikar.springer.proccessactivites.ProcessViewModel" />
 
     </data>
 
@@ -317,11 +317,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:text="@={ViewModel.EditName}"
+                    android:text="@={ViewModel.editName}"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical7"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
                     app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
                     app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal5" />
 
@@ -406,11 +406,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:text="@={ViewModel.EditEmail}"
+                    android:text="@={ViewModel.editEmail}"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical4"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
                     app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
                     app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal7" />
 
@@ -419,11 +419,11 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:text="@={ViewModel.EditAge}"
+                    android:text="@={ViewModel.editAge}"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical7"
+                    app:layout_constraintEnd_toStartOf="@+id/profilecardvertical9"
                     app:layout_constraintStart_toStartOf="@+id/profilecardvertical1"
                     app:layout_constraintTop_toTopOf="@+id/profilecardhorizontal9" />
 
@@ -471,7 +471,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="20dp"
-            app:layout_constraintGuide_percent="0.10" />
+            app:layout_constraintGuide_percent="0.05" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/profilehorizontal2"

@@ -22,4 +22,7 @@
     <string name="fb_login_protocol_scheme">fb1240725006131949</string>
     <string name="webclient">553467891497-r3uclcfg7l713ufvil7q2smnf28bcia4.apps.googleusercontent.com</string>
     <string name="spring_measure">Spring Measure</string>
+    <string name="mm">mm</string>
+    <string name="cm">cm</string>
+    <string name="M">M</string>
 </resources>
